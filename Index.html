@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang = "fr">
+
+    <head>
+
+        <meta charset = "utf-8">
+        <title>title</title>
+        <link rel = "stylesheet" href = "CSS/style.css">
+        <script src = "JS/jQuery.js"></script>
+        <script src = "JS/script.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <header>
+
+            <h1>Hello Painting city</h1>
+
+        </header>
+
+        <nav>
+
+            <form action = "Index" method = "POST">
+                    
+                <label for = 'toolColor'>Couleur de trait :</label>
+                <input type = "color" value = "#000000" name = "toolColor" id = 'toolColor'>
+
+                <label id = 'toolFillColorLabel'>Couleur de remplissage :</label>
+                <input type = "color" value = "#000000" name = "toolFillColor" id = 'toolFillColor'>
+
+                <label id = "labelShadowColor">Ombrages :</label>
+                <input type = "color" value = "#000000" name = "toolShadowColor" id = 'toolShadowColor'>
+
+                <label id = 'labelShadowOffsetX'>Décalage X :</label>
+                <input type = "range" id = 'shadowOffsetX' value = "5" max = "20" min = "0" step = "1">
+
+                <label id = 'labelShadowOffsetY'>Décalage Y :</label>
+                <input type = "range" id = 'shadowOffsetY' value = "5" max = "20" min = "0" step = "1">
+
+                <label id = 'labelShadowBlur'>Flouatge :</label>
+                <input type = 'range' id = 'shadowBlur' value = '5' max = '20' min = "0" step = '1'>
+
+                <label for = "toolSize">Epaisseur du trait :</label>
+                <select name = "toolSize" id = "toolSize">
+
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "7">7</option>
+                    <option value = "9">9</option>
+                    <option value = "12">12</option>
+                        
+                </select>
+
+            </form>
+
+            <span id = 'crayon'></span>
+            <span id = 'ligne'></span>
+            <span id = 'rectangle'></span>
+            <span id = 'cercle'></span>
+            <span id = 'grille'></span>
+            <span id = 'gomme'></span>
+            <span id = 'clear'></span>
+
+        </nav>
+
+        <section id = 'toile'>
+
+            <canvas id = 'paint' width = '1280' height = '720'></canvas>
+
+        </section>
+
+    </body>
+
+</html>

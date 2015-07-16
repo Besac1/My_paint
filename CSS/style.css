@@ -1,0 +1,148 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+body
+{
+    font-size: 1.5em;
+    font-family: arial, sans-serif;
+    color: #000;
+    background-color: rgba(55,55,55,0.6);
+}
+
+header
+{
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    background-color: rgba(155,155,155, 1);
+    padding: 15px;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 2px solid #000;
+}
+
+nav
+{
+    display: block;
+    padding: 15px;
+    text-align: center; 
+}
+
+nav form 
+{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+form label
+{
+    display: block;
+    margin: 15px 15px;
+}
+
+section
+{
+    min-height: 500px;
+    padding: 20px;
+}
+
+canvas
+{
+    background-color: white;
+    display: block;
+    border: 2px solid #000;
+    border-radius: 15px;
+    margin: auto;
+}
+
+#createToile
+{
+    display: none;
+}
+
+#toolFillColor
+{
+    display: none;
+}
+
+nav span
+{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+nav span:hover
+{
+    box-shadow: -1px -1px 15px;
+}
+
+#crayon
+{
+    background-image: url('Images/Crayon.png');
+    background-size: 100%;
+    background-position: center;
+}
+
+#cercle
+{
+    background-image: url('Images/Cercle.png');
+    background-size: 100%;
+    background-position: center;
+}
+
+#rectangle
+{
+    background-image: url('Images/Rectangle.png');
+    background-size: 100%;
+    background-position: center;
+}
+
+#ligne
+{
+    background-image: url('Images/Ligne.png');
+    background-size: 100%;
+    background-position: center;
+}
+
+#grille
+{
+    background-image: url('Images/Grille.png');
+    background-size: 100%;
+    background-position: center;
+}
+
+#gomme
+{
+    background-image: url('Images/Gomme.png');
+    background-size: 100%;
+    background-position: center;
+}
+
+#clear
+{
+    background-image: url('Images/Clear.png');
+    background-size: 100%;
+    background-position: center;
+}
+
+#toolShadowColor, #shadowOffsetY, #shadowOffsetX, #shadowBlur, #labelShadowBlur, #labelShadowOffsetX, #labelShadowOffsetY
+{
+    display: none;
+}
+
+#toolFillColorLabel, #labelShadowColor
+{
+    color: blue;
+    text-decoration: underline;
+}
